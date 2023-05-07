@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a(min , max){
+            return Math.floor(Math.random() * (max - min)) + min; //不含最大值，含最小值
+        }
+        var c = a(1,10);
+        console.log(c);
+        while (true){
+            var b = prompt('请输入一个1-10的整数:');
+            if(b > c){
+                alert('数字大了，请继续猜！');
+            }else if(b < c){
+                alert('数字小了，请继续猜！');
+            }else{
+                alert('恭喜您，猜对了!');
+                break;  //退出程序
+        }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
